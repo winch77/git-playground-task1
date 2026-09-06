@@ -9,11 +9,11 @@ function main() {
     case "add": {
       const text = rest.join(" ").trim();
       if (!text) {
-        console.log("Usage: notes add <your note>");
+        console.log("Usage: notes are add <your note>");
         return;
       }
       const note = store.add(text);
-      console.log(`Added note #${note.id}: ${note.text}`);
+      console.log(`Added a note #${note.id}: ${note.text}`);
       break;
     }
     case "list": {
